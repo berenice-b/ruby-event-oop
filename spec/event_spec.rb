@@ -8,9 +8,11 @@ describe Event do
   end
 
 	describe 'initializer' do
-		it 'creates an event' do
-
-		end
+    it 'creates an event' do
+      event = Event.new("start_date", 9, "title", ["attendee1","attendee2"])
+      expect(event.class).to eq(Event)
+      end
+    
 	end
 
 end
